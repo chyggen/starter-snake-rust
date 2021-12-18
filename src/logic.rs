@@ -61,7 +61,7 @@ pub fn get_move(game: &Game, _turn: &u32, _board: &Board, you: &Battlesnake) -> 
     if my_head.x == 0 {
         // my head is on the left edge of the board
         possible_moves.insert("left", false);
-    } else if myhead.x == 1 - board_width {
+    } else if my_head.x == 1 - board_width {
         // my head is on the right edge of the board
         possible_moves.insert("right", false);
     } else if my_head.y == 0 {
